@@ -1,0 +1,1 @@
+This script reads student data from a marks.txt file line-by-line. It uses a while loop and arithmetic comparisons to check if marks are below 33, then prints names of students who passed all subjects or failed only one.
