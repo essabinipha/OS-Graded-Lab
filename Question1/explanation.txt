@@ -1,1 +1,1 @@
-This script uses a conditional structure to determine if the input is a file or a directory. It utilizes the wc command to extract file statistics and ls combined with wc to count the number of files and .txt files within a directory.
+This script checks if the input is a file or a directory using the -f and -d flags. It then uses the wc command to provide counts for files or the ls command to count files within a directory
