@@ -1,0 +1,1 @@
+This script uses grep with Extended Regular Expressions to filter lines matching a specific email pattern. It pipes the results through sort and uniq to eliminate duplicate entries and redirects valid and invalid addresses into separate output files.
