@@ -1,0 +1,1 @@
+This program demonstrates asynchronous signal handling in C. The parent process registers a custom handler using the signal() system call to intercept SIGTERM and SIGINT, while child processes are used to send these specific signals back to the parent after a timed delay.
