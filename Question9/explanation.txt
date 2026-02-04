@@ -1,0 +1,1 @@
+This C program demonstrates how to prevent zombie processes by using the wait() system call. When a child process is created via fork(), the parent process calls wait() to collect the child's exit status, ensuring the system removes the child's entry from the process table immediately.
