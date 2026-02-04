@@ -1,0 +1,1 @@
+This script processes a log file using grep to count occurrences of different status levels. It extracts the latest error message and generates a summary report text file labeled with the current date.
