@@ -1,0 +1,1 @@
+This script iterates through files in a directory and moves them to a backup folder using the & symbol to run each operation in the background. It captures the Process ID (PID) of each task using the $! variable and uses the wait command to ensure all background processes finish before the script exits.
