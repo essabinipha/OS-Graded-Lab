@@ -2,16 +2,19 @@
 path=$1
 
 if [ $# -ne 1 ]; then
-    echo "Error: Exactly one argument required."
+    echo "Error: usage ./analyze.sh <file_or_dir>"
     exit 1
 fi
 
 if [ -f "$path" ]; then
-    echo "Lines: $(wc -l < "$path"), Words: $(wc -w < "$path"), Chars: $(wc -m < "$path")"
+    echo "File stats for $path:"
+    echo "Lines: $(wc -l < "$path")"
+    echo "Words: $(wc -w < "$path")"
+    echo "Chars: $(wc -m < "$path")"
 elif [ -d "$path" ]; then
-    total=$(ls -1 "$path" | wc -l)
-    txt_files=$(ls -1 "$path"/*.txt 2>/dev/null | wc -l)
-    echo "Total files: $total, .txt files: $txt_files"
+    echo "Directory stats for $path:"
+    echo "Total files: $(ls -1 "$path" | wc -l)"
+    echo "Text files (.txt): $(ls -1 "$path"/*.txt 2>/dev/null | wc -l)"
 else
-    echo "Error: Path does not exist or is invalid."
+    echo "Error: path not found"
 fi
