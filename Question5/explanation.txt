@@ -1,0 +1,1 @@
+This script compares two directories using the comm command combined with process substitution to identify unique files in each folder. It further iterates through common files using a loop and the cmp command to detect any differences in their actual content.
