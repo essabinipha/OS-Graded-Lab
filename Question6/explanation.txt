@@ -1,0 +1,1 @@
+This script processes a text file by using the tr command to normalize spacing and isolate words. It then employs awk for complex calculations like finding word lengths and averages, while using sort and uniq to determine the total count of unique words.
