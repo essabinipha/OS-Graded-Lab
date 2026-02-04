@@ -1,0 +1,1 @@
+This script reads words from a text file and categorizes them into three separate files using Bash regular expressions. It ignores case sensitivity while checking if words contain only vowels, only consonants, or start with a consonant and contain a mix of both.
